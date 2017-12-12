@@ -2,39 +2,38 @@ import React from 'react'
 import {Menu, Icon} from 'semantic-ui-react';
 
 
-const MenuBar = ({changeSelected, selected}) => {
+const MenuBar = (props) => {
 
-	const handleClick = (event) => {
-		changeSelected(event.target.id)
-	}
+      /*
+      
+      The 'a' tags below are the menu items. Think about the way a menu 
+      should work. When you click a menu item, the button typically becomes
+      'active' to indicate that it is currently selected. How could we achieve
+      this programatically? What other behavior do we expect when we click
+      on a menu item? Do we need state in this component, and if not, how can
+      this component be made aware of what is currently the active menu item?
 
+      */
 
+	return (
+      <div className="ui four item menu">
+            <a className="item active" id="profile">
+            	<i className="user large icon"/>
+            </a>
 
-	return <Menu widths={4}>
-            <Menu.Item onClick={handleClick} 
-            		   active={selected === "profile"}
-            		   id="profile">
-            		  	<Icon size = "large" name="user"/>
-            </Menu.Item>
+            <a className="item" id="photo">
+            	<i className="photo large icon"/>
+            </a>
 
-            <Menu.Item onClick={handleClick} 
-            		   active={selected === "photo"} 
-            		   id="photo">
-            		   <Icon size = "large" name="photo"/>
-            </Menu.Item>
+            <a className="item" id="cocktail">
+            	<i className="cocktail large icon"/>
+            </a>
 
-            <Menu.Item onClick={handleClick} 
-            		   active={selected === "cocktail"} 
-            		   id="cocktail">
-            		   <Icon size = "large" name="cocktail"/>
-            </Menu.Item>
-
-            <Menu.Item onClick={handleClick} 
-            		   active={selected === "pokemon"}
-            		   id="pokemon"> 
-            		   <Icon size = "large" name="theme isle"/>
-            </Menu.Item>
-          </Menu>
+            <a className="item" id="pokemon"> 
+            	<i className=" themeisle large icon"/>
+            </a>
+      </div>
+      )
 
 }
 

@@ -2,6 +2,8 @@ import React from 'react'
 import {userData, photo, cocktails} from '../data.js'
 import {Card, Button, Image, Loader} from 'semantic-ui-react'
 
+/*No need to code in here! These are merely presentational components.*/
+
 export const Profile = () => {
 
 	return (
