@@ -1,8 +1,7 @@
 # Props and State Discussion Question 
 
 Get together in groups and clone down this repository. For the purposes of this discussion question, you should work only out of `components/MenuBar.js` and `containers/MainBox.js`. Your end goal is to make this app function like so:
-
-Reference-style: 
+ 
 ![alt text][example]
 
 [example]: ./M4-DQ-example.gif "final"
