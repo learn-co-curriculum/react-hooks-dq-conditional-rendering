@@ -4,7 +4,7 @@ Get together in groups and clone down this repository. For the purposes of this 
  
 ![alt text][example]
 
-[example]: ./public/M4-DQ-example.gif "final"
+[example]: https://media.giphy.com/media/3oFzmbfBOqAmBzA7AY/giphy.gif "final"
 
 
 A few things to think about:
