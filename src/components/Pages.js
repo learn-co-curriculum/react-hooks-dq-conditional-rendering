@@ -38,24 +38,28 @@ export const Photos = () => {
 
 export const Cocktails = () => {
 
-	const cocktailsElements = <ul>{cocktails.drinks.map((drink,index) => {
-		return(
-			<li key={index}>
-				<h5>Name: {drink.name}</h5>
-				<p>Description: {drink.description}</p>
-				<br/>
-			</li>
+	const cocktailsElements = 
+		cocktails.drinks.map((drink,index) => {
+				return(
+					<li key={index}>
+						<h5>Name: {drink.name}</h5>
+						<p>Description: {drink.description}</p>
+						<br/>
+					</li>
+				)
+			})
+		}
 
+
+		return (
+			<Card fluid>
+				<Card.Content textAlign="center">
+					<ul>
+						{cocktailsElements}
+					</ul>
+				</Card.Content>
+			</Card>
 		)
-	})}</ul>
-
-	return (
-		<Card fluid>
-			<Card.Content textAlign="center">
-				{cocktailsElements}
-			</Card.Content>
-		</Card>
-	)
 
 }
 
@@ -96,15 +100,13 @@ export class Pokemon extends React.Component {
 			content = <div style={{height: 300}}><Loader active size='large'>Loading</Loader></div>
 		}
 
-		console.log(content)
-
 		return (
-		<Card fluid>
-			<Card.Content textAlign="center">
-				{content}
-			</Card.Content>
-		</Card>
-	)
+			<Card fluid>
+				<Card.Content textAlign="center">
+					{content}
+				</Card.Content>
+			</Card>
+		)
 	}
 
 }
