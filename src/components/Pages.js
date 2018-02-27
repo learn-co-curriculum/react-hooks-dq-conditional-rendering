@@ -48,7 +48,6 @@ export const Cocktails = () => {
 					</li>
 				)
 			})
-		}
 
 
 		return (
