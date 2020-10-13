@@ -14,3 +14,4 @@ A few things to think about:
 3. Which component should call the function that changes state?
 4. Which component is responsible for passing down props?
 5. How can state be used to manage the rendering of components and change the style of components already on the page?
+
