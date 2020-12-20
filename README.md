@@ -1,4 +1,4 @@
-# Discussion Question: Conditional Rendering
+# Discussion Questions: Conditional Rendering
 
 Get together in groups and clone down this repository. For the purposes of this
 discussion question, you should work only out of `components/MenuBar.js` and
