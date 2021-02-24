@@ -1,4 +1,4 @@
-# Discussion Questions: Conditional Rendering
+# Discussion Questions: Conditional Rendering!
 
 Get together in groups and clone down this repository. For the purposes of this
 discussion question, you should work only out of `components/MenuBar.js` and
@@ -80,12 +80,13 @@ function Parent() {
     setSearch(newValue);
   }
 
-  return;
-  <div>
-    {/*pass down handleSearchChange as a callback function*/}
-    <Child onSearchChange={handleSearchChange} />
-    <p>You searched for: {search}</p>
-  </div>;
+  return (
+    <div>
+      {/*pass down handleSearchChange as a callback function*/}
+      <Child onSearchChange={handleSearchChange} />
+      <p>You searched for: {search}</p>
+    </div>
+  );
 }
 
 function Child({ onSearchChange }) {
