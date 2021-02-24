@@ -12,7 +12,7 @@ function MainBox() {
     - Where should these methods be called?
   */
 
-  const detailsToDisplay = <div>Hi, I'm a div!</div>;
+  let detailsToDisplay = <div>Hi, I'm a div!</div>;
 
   return (
     <div>
