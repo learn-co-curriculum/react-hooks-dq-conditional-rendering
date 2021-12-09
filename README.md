@@ -67,9 +67,9 @@ lot more strategies you can look into as well!
 
 ### Inverse Data Flow - Setting State from a Child Component
 
-In React, we can pass data **down** from a parent to a child via props. If we need
-to pass data **up** from a child to a parent, the parent must provide a callback function
-that can be called from the child. For example:
+In React, we can pass data **down** from a parent to a child via props. If we
+need to pass data **up** from a child to a parent, the parent must provide a
+callback function that can be called from the child. For example:
 
 ```js
 function Parent() {
