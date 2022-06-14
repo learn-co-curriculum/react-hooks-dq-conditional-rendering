@@ -3,7 +3,7 @@ import MenuBar from "./MenuBar";
 import { Profile, Photos, Cocktails, Pokemon } from "./pages";
 
 function MainBox() {
-    const [childName,setChildName] = useState(Profile)
+    const [selected,setSelected] = useState("user")
     
   /*
     Replace the code below! Depending on what menu item is selected in the menu, 
@@ -13,22 +13,21 @@ function MainBox() {
     - Which component should have methods to control state? 
     - Where should these methods be called?
   */
-    function clickProfile(){
-      setChildName(Profile)
+  let detailsToDisplay = ()=> {
+    if (selected === "user"){
+      return <Profile/>
+    } else if (selected === "photo"){
+      return <Photos/>
+    } else if (selected ==="cocktail"){
+      return <Cocktails/>
+    } else if (selected === "themeisle"){
+      return <Pokemon />
     }
-  function clickPhotos(){
-    setChildName(Photos)
-  }
-  function clickCocktails(){
-    setChildName(Cocktails)
-  }
-  function clickPokemon(){
-    setChildName(Pokemon)
   }
   return (
     <div>
-      <MenuBar clickProfile={clickProfile} clickPhotos={clickPhotos} clickCocktails={clickCocktails} clickPokemon={clickPokemon} />
-      <p>{childName}</p>
+      <MenuBar selected={selected} setSelected={setSelected} />
+      {detailsToDisplay()}
     </div>
   );
 }
