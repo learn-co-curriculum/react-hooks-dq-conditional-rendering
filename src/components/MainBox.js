@@ -20,7 +20,7 @@ function MainBox() {
       return <Photos/>
     } else if (selected ==="cocktail"){
       return <Cocktails/>
-    } else if (selected === "themeisle"){
+    } else if (selected === "pokemon"){
       return <Pokemon />
     }
   }

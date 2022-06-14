@@ -21,20 +21,20 @@ function MenuBar({ selected, setSelected}) {
   
   return (
     <div className="ui four item menu">
-      <span className="item">
+      <span className={selected === "user" ? "item active" : "item"}>
         <i className="user large icon" onClick={()=>handleClick("user")}/>
       </span>
 
-      <span className= "item" >
+      <span className={selected === "photo" ? "item active" : "item"}>
         <i className="photo large icon" onClick={()=>handleClick("photo")}/>
       </span>
 
-      <span className="item" >
+      <span className={selected === "cocktail" ? "item active" : "item"}>
         <i className="cocktail large icon" onClick={()=>handleClick("cocktail")}/>
       </span>
 
-      <span className="item" >
-        <i className="themeisle large icon" onClick={()=>handleClick("user")}/>
+      <span className={selected === "pokemon" ? "item active" : "item"}>
+        <i className="themeisle large icon" onClick={()=>handleClick("pokemon")}/>
       </span>
     </div>
   );
